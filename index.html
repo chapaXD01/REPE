@@ -7,12 +7,14 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             background: linear-gradient(135deg, #f5f0ff 0%, #ede4ff 100%);
             font-family: 'Georgia', serif;
+            gap: 30px;
         }
         
         .beauty-text {
@@ -42,9 +44,30 @@
                     2px 2px 4px rgba(0, 0, 0, 0.1);
             }
         }
+        
+        img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 
+                0 10px 30px rgba(147, 51, 234, 0.3),
+                0 20px 40px rgba(147, 51, 234, 0.15);
+            border: 3px solid rgba(147, 51, 234, 0.2);
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+        
+        img:hover {
+            transform: translateY(-8px);
+            box-shadow: 
+                0 15px 40px rgba(147, 51, 234, 0.4),
+                0 25px 50px rgba(147, 51, 234, 0.2);
+            border-color: rgba(147, 51, 234, 0.4);
+        }
     </style>
 </head>
 <body>
     <h1 class="beauty-text">Beauty of Corn</h1>
+    <img src="corn.png" alt="">
 </body>
 </html>
